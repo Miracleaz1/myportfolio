@@ -42,5 +42,16 @@ export const blogPosts = [
     slug: 'inventory-operations-improvement',
     content: 'Applied data-driven stock management to improve customer experience and pricing accuracy.',
     link: ''
+  },
+  {
+    id: 5,
+    title: 'Built LearnWithPapa LMS Web Application',
+    excerpt: 'Built LearnWithPapa LMS as a web application using React and Next.js frontend architecture for learners, instructors, and program administrators.',
+    date: '2026-04-10',
+    readTime: 4,
+    category: 'Product Delivery',
+    slug: 'learnwithpapa-lms-delivery',
+    content: 'Implemented and refined complete learning workflows including courses, assignments, analytics, and settings to deliver a stable, deployment-ready LMS web application.',
+    link: 'https://github.com/Trueminds-Innovations-Ltd/team_papa_frontend_march.git'
   }
 ]

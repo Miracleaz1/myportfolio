@@ -151,5 +151,39 @@ export const projects: Project[] = [
       ],
       result: 'Improved team delivery speed and consistency through reusable components and clearer frontend structure.'
     }
+  },
+  {
+    id: 5,
+    title: 'LearnWithPapa Web Application',
+    description: 'A full-featured LMS web application for learners, instructors, and program administrators with end-to-end course delivery, collaboration, analytics, and account management.',
+    technologies: ['React', 'Next.js', 'TypeScript', 'Role-Based Access', 'Course Management', 'Analytics Dashboard'],
+    impact: 'Delivered a stable, deployment-ready LMS web application with complete multi-role workflows and polished frontend user experience.',
+    image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=500&h=300&fit=crop',
+    media: [
+      {
+        src: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&h=700&fit=crop',
+        alt: 'Students learning on laptops in a digital classroom'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1200&h=700&fit=crop',
+        alt: 'Team planning a product roadmap on whiteboard'
+      },
+      {
+        src: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1200&h=700&fit=crop',
+        alt: 'Online learning interface and study materials'
+      }
+    ],
+    link: 'https://github.com/Trueminds-Innovations-Ltd/team_papa_frontend_march.git',
+    github: '',
+    caseStudy: {
+      problem: 'Online learning platforms often fail to fully support all key actors in one system. LearnWithPapa needed a unified experience for learners, instructors, and program administrators with reliable operations and measurable progress.',
+      approach: [
+        'Built the frontend with React and Next.js to deliver a fast, responsive, and scalable user interface.',
+        'Designed complete UI/UX flows across authentication, dashboards, course catalog, profiles, settings, and analytics.',
+        'Implemented core multi-role modules including course creation/management, assignments, collaboration, notifications, and progress tracking.',
+        'Refined the experience through testing and bug fixes to ensure smooth navigation and reliable feature behavior.'
+      ],
+      result: 'Delivered LearnWithPapa as a complete LMS web application with all major frontend modules implemented and validated for deployment.'
+    }
   }
 ]
