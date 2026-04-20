@@ -95,8 +95,8 @@ export const projects: Project[] = [
     image: 'https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=500&h=300&fit=crop',
     media: [
       {
-        src: 'https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=1200&h=700&fit=crop',
-        alt: 'Global map visualization used in country info projects'
+        src: 'https://flagcdn.com/w1280/ng.png',
+        alt: 'Nigeria flag'
       },
       {
         src: 'https://images.unsplash.com/photo-1532375810709-75b1da00537c?w=1200&h=700&fit=crop',

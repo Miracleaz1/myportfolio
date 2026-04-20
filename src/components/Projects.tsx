@@ -64,6 +64,18 @@ export function Projects() {
   }, [activeProject])
 
   useEffect(() => {
+    if (!activeProject || activeProject.media.length <= 1) {
+      return
+    }
+
+    const intervalId = window.setInterval(() => {
+      setActiveMediaIndex((current) => (current + 1) % activeProject.media.length)
+    }, 5000)
+
+    return () => window.clearInterval(intervalId)
+  }, [activeProject])
+
+  useEffect(() => {
     const rawFavorites = localStorage.getItem('portfolio-project-favorites')
     if (!rawFavorites) {
       return
@@ -296,7 +308,7 @@ export function Projects() {
                 {activeProject.media.length > 0 ? (
                   <div>
                     <h4 className="font-semibold text-lg mb-3">Project Gallery</h4>
-                    <div className="relative overflow-hidden rounded-xl border border-slate-200 dark:border-slate-700">
+                    <div className="floating-media-frame relative mx-auto overflow-hidden rounded-2xl">
                       <img
                         src={activeProject.media[activeMediaIndex].src}
                         alt={activeProject.media[activeMediaIndex].alt}

@@ -161,6 +161,38 @@ body {
   color: #94a3b8;
 }
 
+.floating-media-frame {
+  max-width: 100%;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow:
+    0 22px 40px -24px rgba(15, 23, 42, 0.35),
+    0 0 0 1px rgba(255, 255, 255, 0.25) inset;
+  animation: mediaFloat 4.2s ease-in-out infinite;
+  will-change: transform;
+}
+
+.dark .floating-media-frame {
+  background: rgba(15, 23, 42, 0.9);
+  box-shadow:
+    0 22px 40px -24px rgba(2, 132, 199, 0.35),
+    0 0 0 1px rgba(56, 189, 248, 0.18) inset;
+}
+
+.floating-media-frame img {
+  display: block;
+}
+
+@keyframes mediaFloat {
+  0%,
+  100% {
+    transform: translateX(-10px) rotate(-0.5deg);
+  }
+  50% {
+    transform: translateX(10px) rotate(0.5deg);
+  }
+}
+
 @keyframes fadeUp {
   to {
     opacity: 1;
@@ -192,5 +224,10 @@ body {
   .project-spotlight-card {
     animation: none !important;
     transition: none !important;
+  }
+
+  .floating-media-frame {
+    animation: none !important;
+    transform: none !important;
   }
 }

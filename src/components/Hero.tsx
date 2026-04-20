@@ -4,6 +4,15 @@ import profilePhoto from '../image/WhatsApp Image 2026-04-18 at 20.02.16.jpeg'
 export function Hero() {
   return (
     <section id="home" className="relative overflow-hidden pt-32 pb-16 px-4 min-h-screen flex items-center">
+      <div className="absolute inset-0 md:hidden" aria-hidden="true">
+        <img
+          src={profilePhoto}
+          alt=""
+          className="h-full w-full object-cover object-top opacity-12"
+        />
+        <div className="absolute inset-0 bg-white/75 dark:bg-slate-950/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-white/55 to-white dark:from-slate-950/20 dark:via-slate-950/50 dark:to-slate-950" />
+      </div>
       <div className="hero-orb hero-orb-one" aria-hidden="true" />
       <div className="hero-orb hero-orb-two" aria-hidden="true" />
       <div className="hero-grid-overlay" aria-hidden="true" />
