@@ -52,6 +52,6 @@ export const blogPosts = [
     category: 'Product Delivery',
     slug: 'learnwithpapa-lms-delivery',
     content: 'Implemented and refined complete learning workflows including courses, assignments, analytics, and settings to deliver a stable, deployment-ready LMS web application.',
-    link: 'https://github.com/Trueminds-Innovations-Ltd/team_papa_frontend_march.git'
+    link: 'https://team-papa-frontend-march.vercel.app'
   }
 ]

@@ -173,7 +173,7 @@ export const projects: Project[] = [
         alt: 'Online learning interface and study materials'
       }
     ],
-    link: 'https://github.com/Trueminds-Innovations-Ltd/team_papa_frontend_march.git',
+    link: 'https://team-papa-frontend-march.vercel.app',
     github: '',
     caseStudy: {
       problem: 'Online learning platforms often fail to fully support all key actors in one system. LearnWithPapa needed a unified experience for learners, instructors, and program administrators with reliable operations and measurable progress.',
